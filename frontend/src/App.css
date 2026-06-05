@@ -1,0 +1,136 @@
+:root {
+  --primary-navy: #0A192F;
+  --secondary-black: #000000;
+  --bg-dark-gray: #111111;
+  --text-white: #FFFFFF;
+  --text-light-gray: #CCCCCC;
+  --accent-color: #64FFDA;
+}
+
+body {
+  background-color: var(--bg-dark-gray);
+  color: var(--text-light-gray);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-white);
+  font-weight: 700;
+}
+
+/* Custom Navbar */
+.custom-navbar {
+  background-color: var(--primary-navy) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem 0;
+}
+
+.custom-navbar .navbar-brand {
+  color: var(--text-white) !important;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.custom-navbar .nav-link {
+  color: var(--text-light-gray) !important;
+  transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+  color: var(--text-white) !important;
+}
+
+/* Custom Card */
+.event-card {
+  background-color: var(--secondary-black);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.8);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.event-card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.event-card .card-body {
+  padding: 1.5rem;
+}
+
+.event-card .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.event-card .card-text {
+  color: var(--text-light-gray);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.price-badge {
+  background-color: var(--primary-navy);
+  color: var(--text-white);
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+/* Buttons */
+.btn-primary-custom {
+  background-color: var(--primary-navy);
+  color: var(--text-white);
+  border: 1px solid var(--accent-color);
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-navy);
+  border-color: var(--accent-color);
+}
+
+/* Form Styles */
+.custom-form-control {
+  background-color: var(--secondary-black);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--text-white);
+}
+
+.custom-form-control:focus {
+  background-color: var(--secondary-black);
+  border-color: var(--accent-color);
+  color: var(--text-white);
+  box-shadow: none;
+}
+
+.custom-form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form-label {
+  color: var(--text-white);
+}
+
+/* Footer */
+.custom-footer {
+  background-color: var(--secondary-black);
+  color: var(--text-light-gray);
+  padding: 2rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 4rem;
+}
